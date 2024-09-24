@@ -1,0 +1,134 @@
+*{
+    margin:0px; 
+    padding:0px;
+    box-sizing: border-box;
+    font-family: monaco,Consolas,Lucida Console,monospace;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #FCCFB0;
+}
+
+.container{
+    width: 500px;
+    height: 500px;
+    background-color: #FEEFE5;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.head-title, .question{
+    padding: 5px;
+    text-align: center;
+    background-color: #FEE7D8;
+    border-radius: 15px;
+}
+
+.head-title{
+    margin: 10px;
+    color: #E59F71;
+}
+
+.question{
+    font-size: 24px;
+    padding: 10px;
+}
+
+li{
+    list-style: none;
+    padding: 25px;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    background-color: #FEE7D8;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input:hover{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.question-box > h2{
+    font-size: 24px;
+    padding: 10px;
+    text-align: center;
+}
+
+.final-result{
+    font-size: 28px;
+    padding: 10px;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+    
+    .head-title {
+        font-size: 22px;
+    }
+
+    .question {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        height: auto;
+    }
+
+    .head-title {
+        font-size: 20px;
+    }
+
+    .question {
+        font-size: 16px;
+    }
+
+    .container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        height: auto;
+        padding: 15px;
+    }
+
+    .container {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .head-title {
+        font-size: 18px;
+    }
+
+    .question {
+        font-size: 14px;
+    }
+
+    input {
+        padding: 8px;
+    }
+
+    .final-result {
+        font-size: 22px;
+    }
+}
+
